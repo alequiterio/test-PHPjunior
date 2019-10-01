@@ -1,0 +1,162 @@
+/* 
+*
+* API - Logística Rotas
+* Desenvolvido por: Ale Quiterio
+*
+*/
+
+
+/*
+* Estilos gerais
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+a{
+	color: #795548;
+}
+a:hover{
+	color: #ab47bc;
+}
+
+
+/*
+* Estilos Genéricos
+*/
+.bloco-fixo{
+	width: 100%;
+	position: fixed;
+}
+.box{
+	margin: auto;
+}
+
+/*
+* Cabeçalho
+*/
+header{
+	height: 90px;
+	background-color: rgb(101, 59, 255);
+	padding: 25px 0;
+	top: 0;
+}
+header h1{
+	color: #000000;
+    text-align: left;
+    font: bold 35px arial;
+}
+header h1 small{
+	font-size: 0.5em;
+	color: rgb(101, 59, 255);
+}
+
+/*
+*	Corpo
+*/
+main{
+	margin-top: 110px;
+}
+h2{
+	color: rgb(0, 0, 0);
+	margin-bottom: 10px;
+}
+main section.box{
+	margin: 10px auto;
+	border: thin solid #000000;
+	padding: 20px 10px; 
+}
+p{ 
+    text-align: justify;	
+}
+b{
+	color: #000000;
+}
+ul{
+	padding-left: 30px;
+}
+
+/*
+* Componente - Card Requisição
+*/
+.card{
+	height: 30px;
+	background-color: #cbe4ec;
+	border: thin solid #2196f3;
+	padding: 5px;
+	margin-top: 15px;
+}
+.card__method{
+	width: 60px;
+	height: 100%;
+	float: left;
+	background-color: #2196f3;
+	color: white;
+	border-radius: 3px;
+	padding: 2px 5px;
+	text-align: center;
+	font: bolder 12px arial;
+	margin-right: 15px;
+}
+.card__description{
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+
+/*
+* Componente - Code block
+*/
+.code__title{
+	margin-top: 15px;
+    background-color: #e8e8e8;
+    border: thin solid #d7d7d7;
+	color: #000000;
+	font-weight: bolder;
+	padding: 10px 30px;
+}
+.code__main{
+	background-color: #000000;
+    padding: 20px 0 0;
+    color: #d5d5d5;
+}
+
+.tabela{
+	width: 100%;
+}
+.tabela {
+	border-collapse: collapse;
+}
+.tabela th, .tabela td{
+	text-align: left;
+	padding: 5px;
+}
+
+
+
+/*
+* Media Queries
+*/
+@media only screen and (min-width : 900px )  {
+	.box {
+		width: 80%;
+	}
+}
+@media only screen and (max-width : 900px)  {
+	.box {
+		width: 90%;
+	}
+	header{
+		padding: 35px 0;
+	}
+	header h1{
+		font-size: 25px;
+	}
+
+	.card{
+		height: auto;
+	}
+
+}
